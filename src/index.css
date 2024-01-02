@@ -1,0 +1,340 @@
+/* App */
+body {
+  background-color: #303030;
+}
+
+.app-container {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.component-container {
+  background-color: #222;
+  border: 1px solid #f4d7d7;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  min-height: 400px;
+  min-width: 650px;
+  max-width: 650px;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-container {
+    background-color: #222;
+    border: 1px solid #f4d7d7;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    min-height: 280px;
+    min-width: 380px;
+    max-width: 380px;
+  }
+}
+
+/* Header */
+.main-header {
+  font-size: 48px;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 4px #ff8080;
+  color: #f4d7d7;
+}
+
+/* Token Filter */
+.filter-container {
+  margin-bottom: 10px;
+}
+
+#nameFilter {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border: 1px solid #555;
+}
+
+/* Profit Table */
+.profit-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px; 
+  height: 100%;
+  margin-bottom: 20px;
+}
+.profit-table-container th{
+  background-color: #555;
+}
+
+/* Nav Buttons */
+.nav-button {
+  flex: 1;
+  padding: 10px;
+  background-color: #555;
+  color: #f4d7d7;
+  border: 1px solid #f4d7d7;
+  border-bottom: none;
+  width: 120px;
+  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #777;
+  }
+
+  &.active {
+    background-color: #333;
+    border: 1px solid #f4d7d7;
+  }
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+/* Transaction History */
+.transaction-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+
+.transaction-table{
+  padding: 10px;
+}
+.transaction-table-container td:nth-child(2) {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .transaction-table th:nth-child(3),
+  .transaction-table td:nth-child(3),
+  .transaction-table th:nth-child(6),
+  .transaction-table td:nth-child(6),
+  .transaction-table th:nth-child(8),
+  .transaction-table td:nth-child(8) {
+    display: none;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    font-size: 12px;
+  }
+
+  .transaction-table-container  {
+    height: 278px;
+  }
+}
+
+/* Token Managment */
+.token-table-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.token-table {
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  font-size: 14px;
+}
+
+.token-table th, .token-table td {
+  text-align: center;
+}
+
+.fa-edit, .fa-times {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fa-edit:hover, .fa-times:hover {
+  transform: scale(1.1);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ff8080;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content p {
+  margin-top: 0;
+  color: #f4d7d7;
+  font-size: 14px;
+}
+
+.modal-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.modal-content button {
+  margin: 10px;
+}
+
+.modal-content input {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .token-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    overflow: hidden;
+  }
+}
+
+/* Database */
+.database-manager-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* General Styles */
+h2 {
+  color: #ff8080;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  background-color: #555;
+  padding: 5px 50px;
+  border-radius: 10px;
+  color: #f4d7d7;
+  border: 1px solid #ff8080;
+}
+
+.loading-icon {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.action-button {
+  width: 150px;
+  margin: 0;
+  padding: 10px;
+  width: 120px;
+  background-color: #555;
+  color: #f4d7d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #777;
+  }
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.warning-container {
+  position: relative;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4d7d7;
+  border: 1px solid #ff8080;
+  width: 100%;
+}
+
+.warning-icon {
+  color: #ff8080;
+  margin-right: 5px;
+}
+
+table {
+  background-color: #444;
+  color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+th, td {
+  border: 1px solid #666;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.table-scroll table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+}
