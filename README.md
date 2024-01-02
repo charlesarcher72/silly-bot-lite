@@ -1,0 +1,2 @@
+# sillybotlite
+Cryptocurrency Trading Bot
