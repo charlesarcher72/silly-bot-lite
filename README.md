@@ -1,6 +1,6 @@
 # Silly Bot Lite 🤖
 
-Silly Bot Lite is a cryptocurrency trading bot that leverages TradingView alerts via a webhook to make transactions on the Binance platform. The application is built with React for the front end, uses MongoDB as its database, and is hosted on Vercel. Explore a live demo with sample data [here](https://silly-bot-lite.vercel.app/)!
+Silly Bot Lite is a cryptocurrency trading bot that leverages TradingView alerts via a webhook to make transactions on the Binance platform. The application is built with React for the front end, uses a MongoDB database, and is hosted on Vercel. Explore a live demo with sample data [here](https://silly-bot-lite.vercel.app/)!
 
 ## Developers 👨‍💻👨‍💻
 
@@ -18,29 +18,14 @@ Feel free to check out their GitHub profiles to learn more about their contribut
 
 Silly Bot Lite comes with the following key features:
 
-- **TradingView Integration:**
-   - Leverages TradingView alerts via webhooks for real-time market data.
-
-- **Binance API Integration:**
-   - Executes transactions on the Binance platform using the Binance API.
-
-- **React Front End:**
-   - User-friendly front end built with React for a seamless experience.
-
-- **MongoDB Database:**
-   - Utilizes MongoDB for efficient data storage and retrieval.
-
-- **Transaction History Page:**
-   - Provides a transaction history page that displays data for transactions made by the bot.
-
-- **Token Management Page:**
-   - Features a token management page that allows you to add types of crypto tokens and set the amount you want to use for trades.
-
-- **Database Management Page:**
-   - Includes a database management page that allows the user to clear the transaction history, tokens, and populate the database with sample test data.
-
-- **Profit Analytics:**
-   - Incorporates profit analytics to analyze and display the performance and profitability of trading activities.
+- **TradingView Integration:** Leverages TradingView alerts via webhooks for real-time market data.
+- **Binance API Integration:** Executes transactions on the Binance platform using the Binance API.
+- **React Front End:** User-friendly front end built with React for a seamless experience.
+- **MongoDB Database:** Utilizes MongoDB for efficient data storage and retrieval.
+- **Transaction History:** Provides a transaction history page that displays data for transactions made by the bot.
+- **Token Management:** Allows user to add types of crypto tokens and set the amount you want to use for trades.
+- **Database Management:** Allows the user to clear the transaction history, tokens, and populate the database with sample test data.
+- **Profit Analytics:** Provides ability to analyze and display the performance and profitability of trading activities.
 
 These features make Silly Bot Lite a powerful tool for cryptocurrency trading with a focus on simplicity and real-time data processing.
 
@@ -66,13 +51,8 @@ Follow these steps to get started with Silly Bot Lite:
 1. **Fork the Repository:**
    - Fork the Silly Bot Lite repository on GitHub by clicking the "Fork" button on the top right of the repository page.
 
-2. **Create a Free-tier MongoDB Database:**
+2. **Create Database:**
    - Create a free-tier MongoDB database on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-   - Obtain the following database connection details:
-     - Connection URI
-     - Database Name
-     - Collection Name for main data
-     - Collection Name for tokens
 
 3. **Setup Binance.US API:**
    - Obtain your Binance.US API key and secret from the [Binance API Management](https://www.binance.com/en/my/settings/api-management).
