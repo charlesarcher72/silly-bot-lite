@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Silly Bot Lite 🤖
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Silly Bot Lite is a cryptocurrency trading bot that leverages TradingView alerts via a webhook to make transactions on the Binance platform. The application is built with React for the front end, uses MongoDB as its database, and is hosted on Vercel. Explore a live demo with sample data [here](https://silly-bot-lite.vercel.app/)!
 
-## Available Scripts
+## Developers 👨‍💻👨‍💻
 
-In the project directory, you can run:
+The development of Silly Bot Lite is led by the following developers:
 
-### `npm start`
+- **Charles Archer**
+  - GitHub: [charlesarcher72](https://github.com/charlesarcher72)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Gage Wassweiler**
+  - GitHub: [GW1919](https://github.com/GW1919)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Feel free to check out their GitHub profiles to learn more about their contributions to Silly Bot Lite.
 
-### `npm test`
+## Features 🚀
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Silly Bot Lite comes with the following key features:
 
-### `npm run build`
+- **TradingView Integration:**
+   - Leverages TradingView alerts via webhooks for real-time market data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Binance API Integration:**
+   - Executes transactions on the Binance platform using the Binance API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React Front End:**
+   - User-friendly front end built with React for a seamless experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **MongoDB Database:**
+   - Utilizes MongoDB for efficient data storage and retrieval.
 
-### `npm run eject`
+- **Transaction History Page:**
+   - Provides a transaction history page that displays data for transactions made by the bot.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Token Management Page:**
+   - Features a token management page that allows you to add types of crypto tokens and set the amount you want to use for trades.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Database Management Page:**
+   - Includes a database management page that allows the user to clear the transaction history, tokens, and populate the database with sample test data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Profit Analytics:**
+   - Incorporates profit analytics to analyze and display the performance and profitability of trading activities.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+These features make Silly Bot Lite a powerful tool for cryptocurrency trading with a focus on simplicity and real-time data processing.
 
-## Learn More
+## Technologies Used 🛠️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The following technologies were used in the development of Silly Bot Lite:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React:** A JavaScript library for building user interfaces.
+- **Binance API:** Used to interact with the Binance cryptocurrency exchange for trading.
+- **MongoDB:** A NoSQL database used to store application data.
+- **Vercel:** A cloud platform for hosting and deploying React applications.
+- **Node.js:** The JavaScript runtime used for building server-side applications.
+- **TradingView:** A web-based charting platform used for creating and managing trading alerts.
+- **Webhooks:** Used for receiving real-time alerts from TradingView to trigger actions in the application.
+- **GitHub:** The version control system and code hosting platform for collaboration.
 
-### Code Splitting
+These technologies were chosen to create a robust and efficient cryptocurrency trading bot with real-time alert capabilities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started 🚀
 
-### Analyzing the Bundle Size
+Follow these steps to get started with Silly Bot Lite:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Fork the Repository:**
+   - Fork the Silly Bot Lite repository on GitHub by clicking the "Fork" button on the top right of the repository page.
 
-### Making a Progressive Web App
+2. **Create a Free-tier MongoDB Database:**
+   - Create a free-tier MongoDB database on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+   - Obtain the following database connection details:
+     - Connection URI
+     - Database Name
+     - Collection Name for main data
+     - Collection Name for tokens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Setup Binance.US API:**
+   - Obtain your Binance.US API key and secret from the [Binance API Management](https://www.binance.com/en/my/settings/api-management).
 
-### Advanced Configuration
+4. **Host the Application on Vercel:**
+   - Create a Vercel account if you don't have one.
+   - Install the Vercel CLI: `npm install -g vercel`.
+   - Clone your forked repository: `git clone https://github.com/your-username/silly-bot-lite.git`.
+   - Navigate to the project directory: `cd silly-bot-lite`.
+   - Install dependencies: `npm install`.
+   - Set up the environment variables in a `.env` file or configure them on the Vercel dashboard:
+     - `BINANCE_US_API_KEY`: Your Binance.US API key.
+     - `BINANCE_US_SECRET`: Your Binance.US API secret.
+     - `DB_CONNECTION_URI`: Your MongoDB connection URI.
+     - `DB_NAME`: Your MongoDB database name.
+     - `DB_COLLECTION`: Your MongoDB collection name for main data.
+     - `DB_TOKENS_COLLECTION`: Your MongoDB collection name for tokens.
+   - Deploy the application to Vercel: `vercel`.
+   - Follow the prompts to configure your deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Setup TradingView Alerts:**
+   - Open TradingView and create an alert.
+   - Set the alert to send a webhook to the URL where your application is hosted. Use the following format:
+     ```
+     https://your-vercel-app-url/api/webhook
+     ```
+     Replace `your-vercel-app-url` with the actual URL where your application is hosted.
 
-### Deployment
+Now, your Silly Bot Lite should be set up and ready to use.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Testing Webhook API 🧪
 
-### `npm run build` fails to minify
+You can test the webhook API using the following command from the terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"name": "SOL", "action": "buy", "timeframe": "1h", "tokenPrice": 69, "usdtPrice": 3963.36, "indicator": "Moving Average"}' https://application-url-here/api/webhook
+```
+
+Make sure to replace `https://application-url-here` with the actual URL where your application is hosted.
+
+---
+### Happy trading! 📈💰
