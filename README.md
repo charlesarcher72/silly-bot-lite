@@ -2,8 +2,11 @@
 
 Silly Bot Lite is a cryptocurrency trading bot that leverages TradingView alerts via a webhook to make transactions on the Binance platform. The application is built with React for the front end, uses a MongoDB database, and is hosted on Vercel. Explore a live demo with sample data [here](https://silly-bot-lite.vercel.app/)!
 <div alight="centered">
+
 [![Powered by Vercel](https://img.shields.io/badge/Powered%20by-Vercel-blue)](https://vercel.com/) [![Built with React](https://img.shields.io/badge/Built%20with-React-blue)](https://reactjs.org/)
+
 </div>
+
 ## Developers 👨‍💻👨‍💻
 
 The development of Silly Bot Lite is led by the following developers:
